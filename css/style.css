@@ -26,6 +26,7 @@ body{
 }
 .top-banner{
     display: flex;
+    transition: background 2s ease-in 0s;
     
   
     /* display: grid;
@@ -36,8 +37,11 @@ body{
     width:100%
     
     
-   
+}
+
+.top-banner:hover{
     
+    background-color: brown;
 }
 .half-width{
     width: 100%;
@@ -71,6 +75,28 @@ body{
     width: 300px;
     height: 256px;
 }
+.info-style {
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 2;
+
+}
+.match-result{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 70px 210px 45px 180px;
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+}
+.math-info{
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.team-pic img{
+    width: 300px;
+    height: 256px;
+}
+
   
 
 
