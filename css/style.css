@@ -5,11 +5,8 @@ body{
 
 .button-link{
     text-decoration: none;
-    background-color: #E02C6D;
-    ;
+    background-color: #E02C6D;;
     padding: 10px 40px;
-    
-    /* border-radius: 40px; */
     color: #FFFFFF;
     font-weight: 400;
 
@@ -81,6 +78,10 @@ body{
     font-weight: 2;
 
 }
+.match-title, .sponsor-title{
+    text-align: center;
+    font-size: 30px;
+}
 .match-result{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -95,8 +96,50 @@ body{
 .team-pic img{
     width: 300px;
     height: 256px;
+    padding-bottom: 20px;
 }
-
+.team-pic h3{
+    text-align: center;
+    font-size: 25px;
+}
+.team-detail a{
+    text-align: center;
+    
+    
+}
+.team-detail>.button-link{
+    border-radius: 10px;
+}
+.sponsor-part{
+    margin-top: 100px;
+}
+.match-sponsor{
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 70px 180px 100px 250px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+.sponsor img {
+    width: 70px;
+    height: 70px;
+}
+.for-sponsor{
+    margin-bottom: 100px;
+   
+}
+.sponsor-link{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    background-color: tomato;
+    border-radius: 5px;
+    padding: 10px 40px;
+    
+    
+    
+}
   
 
 
@@ -131,9 +174,17 @@ body{
         overflow-x: hidden;
       }
    
-    .players{
+    .players, .match-result{
         grid-template-columns: repeat(1,1fr);
         justify-content: center;
+    }
+    .match-sponsor{
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 100px;
+        grid-row-gap: 50px;
+        justify-content: center;
+
+
     }
     .top-banner{
         flex-direction: column;
